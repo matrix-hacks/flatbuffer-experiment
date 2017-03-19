@@ -1,10 +1,10 @@
 ## Instructions
 
-Build/install https://github.com/google/flatbuffers and make sure flatc is in your path.
-Open flatc-build-cmds.sh in a text editor to understand what it's doing.
-Run flatc-build-cmds.sh.
-Observe the results in the Matrix directory.
-This will contain a .bin file with the binary flatbuffer itself as well as language-specific bindings for reading that data.
+* Build/install https://github.com/google/flatbuffers and make sure flatc is in your path.
+* Open flatc-build-cmds.sh in a text editor to understand what it's doing.
+* Run flatc-build-cmds.sh.
+* Observe the results in the Matrix directory.
+* This will contain a .bin file with the binary flatbuffer itself as well as language-specific bindings for reading that data.
 
 ## Files
 *member.fbs* Flatbuffer schema file. Describes the layout of the binary format.
@@ -15,6 +15,6 @@ back the binary format.
 
 ## What's the point of this?
 If homeservers and clients were capable of supporting flatbuffers, clients and homeservers would not have to parse json anymore.
-Performance wise, that's nice. Benchmarks here:
+Performance wise, that's pretty nice. Benchmarks here:
 https://google.github.io/flatbuffers/flatbuffers_benchmarks.html
 It's perhaps worth consideration.
