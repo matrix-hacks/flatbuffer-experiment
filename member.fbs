@@ -1,0 +1,32 @@
+namespace Matrix;
+
+table MemberContent {
+  membership:string;
+  avatar_url:string;
+  displayname:string;
+}
+
+table RoomStateContent {
+  name:string;
+  join_rules:string;
+}
+
+table RoomState {
+  type:string;
+  state_key:string;
+  content:RoomStateContent;
+}
+
+table Member {
+  age:int;
+  content:MemberContent;
+  state_key:string;
+  origin_server_ts:ulong;
+  event_id:string;
+  type:string;
+  room_id:string;
+  sender:string;
+  invite_room_state:[RoomState];
+}
+
+root_type Member;
