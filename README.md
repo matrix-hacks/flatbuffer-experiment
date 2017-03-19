@@ -7,10 +7,13 @@
 * This will contain a .bin file with the binary flatbuffer itself as well as language-specific bindings for reading that data.
 
 ## Files
-*member.fbs* Flatbuffer schema file. Describes the layout of the binary format.
-*m.room.member_example.json* An example matrix event pulled from here:
+#### member.fbs
+Flatbuffer schema file. Describes the layout of the binary format.
+#### m.room.member_example.json
+An example matrix event pulled from here:
 https://github.com/matrix-org/matrix-doc/blob/master/event-schemas/examples/m.room.member%23invite_room_state
-*flatc-build-cmds.sh* Script that uses flatc to generate a binary flatbuffer from the json file, and generate language bindings for reading
+#### flatc-build-cmds.sh
+Script that uses flatc to generate a binary flatbuffer from the json file, and generate language bindings for reading
 back the binary format.
 
 ## What's the point of this?
